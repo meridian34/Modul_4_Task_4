@@ -14,7 +14,7 @@ namespace Modul_4_Task_4.EntityConfigurations
         public void Configure(EntityTypeBuilder<Song> builder)
         {
             builder.ToTable("Song").HasKey(s => s.Id);
-            builder.Property(s => s.Duration).HasColumnName("Duration");
+            builder.Property(s => s.Duration).HasColumnName("Duration").IsRequired();
             builder.Property(s => s.RelesedDate).HasColumnName("RelesedDate").HasColumnType("date");
             builder.Property(s => s.Title).HasColumnName("Title").HasMaxLength(50);
 

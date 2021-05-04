@@ -23,7 +23,7 @@ namespace Modul_4_Task_4.EntityConfigurations
             builder.HasMany(a => a.Songs)
                 .WithMany(s => s.Artists)
                 .UsingEntity<Dictionary<string, object>>(
-                "Supply",
+                "ArtistSong",
                 sa => sa
                 .HasOne<Song>()
                 .WithMany()
