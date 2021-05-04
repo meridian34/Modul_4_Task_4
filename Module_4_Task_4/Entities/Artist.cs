@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module_4_Task_4.Entities
+namespace Modul_4_Task_4.Entities
 {
     public class Artist
     {

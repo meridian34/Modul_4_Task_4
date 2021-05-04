@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
-namespace Module_4_Task_4
+namespace Modul_4_Task_4
 {
     public class ContextFactory : IDesignTimeDbContextFactory<ApplicationContext>
     {

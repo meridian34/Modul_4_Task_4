@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Module_4_Task_4
+namespace Modul_4_Task_4
 {
     class Program
     {

@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Module_4_Task_4.Entities;
-using Module_4_Task_4.EntityConfigurations;
+using Modul_4_Task_4.Entities;
+using Modul_4_Task_4.EntityConfigurations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module_4_Task_4
+namespace Modul_4_Task_4
 {
     public class ApplicationContext : DbContext
     {

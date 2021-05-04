@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Module_4_Task_4.Entities;
+using Modul_4_Task_4.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module_4_Task_4.EntityConfigurations
+namespace Modul_4_Task_4.EntityConfigurations
 {
     public class GenreConfiguration : IEntityTypeConfiguration<Genre>
     {
