@@ -10,5 +10,6 @@ namespace Module_4_Task_4.Entities
     {
         public int Id { get; set; }
         public string Title { get; set; }
+        public List<Song> Songs { get; set; }
     }
 }

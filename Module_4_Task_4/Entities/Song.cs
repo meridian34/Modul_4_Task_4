@@ -10,7 +10,10 @@ namespace Module_4_Task_4.Entities
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public string Duration { get; set; }
+        public int Duration { get; set; }
         public DateTime RelesedDate { get; set; }
+        public int GenreId { get; set; }
+        public Genre Genre { get; set; }
+        public List<Artist> Artists { get; set; }
     }
 }
