@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modul_4_Task_4.Helpers;
+using System;
 
 namespace Modul_4_Task_4
 {
@@ -6,7 +7,9 @@ namespace Modul_4_Task_4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var s = new Starter();
+            s.Start().GetAwaiter().GetResult();
+
         }
     }
 }
