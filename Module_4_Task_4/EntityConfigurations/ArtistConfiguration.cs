@@ -14,6 +14,7 @@ namespace Modul_4_Task_4.EntityConfigurations
         public void Configure(EntityTypeBuilder<Artist> builder)
         {
             builder.ToTable("Artist").HasKey(a => a.Id);
+            builder.Property(a => a.Id).HasColumnName("Id").ValueGeneratedOnAdd();
             builder.Property(a => a.DateOfBirth).HasColumnName("DateOfBirth").HasColumnType("date");
             builder.Property(a => a.Email).HasColumnName("Email").HasMaxLength(50).IsRequired(false);
             builder.Property(a => a.InstagramUrl).HasColumnName("InstagramUrl").HasMaxLength(50).IsRequired(false);
