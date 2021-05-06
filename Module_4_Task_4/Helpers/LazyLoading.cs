@@ -38,7 +38,7 @@ namespace Modul_4_Task_4.Helpers
 
         public async Task ThirdTask()
         {
-            var t = await _context.Songs.Where(s => s.RelesedDate < s.Artists.Max(q=>q.DateOfBirth)).ToListAsync();
+            var t = await _context.Songs.Where(s => s.RelesedDate < s.Artists.Max(q=>q.DateOfBirth)).Select(s=>s.Title).ToListAsync();
             foreach (var i in t)
             {
                 Console.WriteLine($@"{i}");
