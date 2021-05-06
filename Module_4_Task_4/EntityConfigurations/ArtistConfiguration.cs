@@ -1,15 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Modul_4_Task_4.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Modul_4_Task_4.EntityConfigurations
 {
-    class ArtistConfiguration : IEntityTypeConfiguration<Artist>
+    public class ArtistConfiguration : IEntityTypeConfiguration<Artist>
     {
         public void Configure(EntityTypeBuilder<Artist> builder)
         {

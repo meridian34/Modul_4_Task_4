@@ -99,8 +99,8 @@ namespace Modul_4_Task_4.Migrations
                         .HasColumnName("Id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Duration")
-                        .HasColumnType("int")
+                    b.Property<TimeSpan>("Duration")
+                        .HasColumnType("time")
                         .HasColumnName("Duration");
 
                     b.Property<int>("GenreId")

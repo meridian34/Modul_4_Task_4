@@ -16,13 +16,17 @@ namespace Modul_4_Task_4
             : base(options)
         {
         }
+
         public DbSet<Artist> Artists { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Song> Songs { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.EnableSensitiveDataLogging().LogTo(Console.WriteLine, LogLevel.Information);
+            optionsBuilder
+                .UseLazyLoadingProxies()
+                .EnableSensitiveDataLogging()
+                .LogTo(Console.WriteLine, LogLevel.Information);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -44,7 +44,7 @@ namespace Modul_4_Task_4.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Duration = table.Column<int>(type: "int", nullable: false),
+                    Duration = table.Column<TimeSpan>(type: "time", nullable: false),
                     RelesedDate = table.Column<DateTime>(type: "date", nullable: false),
                     GenreId = table.Column<int>(type: "int", nullable: false)
                 },

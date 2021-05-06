@@ -10,8 +10,8 @@ using Modul_4_Task_4;
 namespace Modul_4_Task_4.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20210504171632_InsertData2")]
-    partial class InsertData2
+    [Migration("20210506072829_AddData")]
+    partial class AddData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -101,8 +101,8 @@ namespace Modul_4_Task_4.Migrations
                         .HasColumnName("Id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Duration")
-                        .HasColumnType("int")
+                    b.Property<TimeSpan>("Duration")
+                        .HasColumnType("time")
                         .HasColumnName("Duration");
 
                     b.Property<int>("GenreId")

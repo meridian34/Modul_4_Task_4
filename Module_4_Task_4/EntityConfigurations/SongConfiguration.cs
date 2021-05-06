@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Modul_4_Task_4.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Modul_4_Task_4.EntityConfigurations
 {
@@ -15,7 +10,7 @@ namespace Modul_4_Task_4.EntityConfigurations
         {
             builder.ToTable("Song").HasKey(s => s.Id);
             builder.Property(s => s.Id).HasColumnName("Id").ValueGeneratedOnAdd();
-            builder.Property(s => s.Duration).HasColumnName("Duration").IsRequired();
+            builder.Property(s => s.Duration).HasColumnName("Duration").HasColumnType("time").IsRequired();
             builder.Property(s => s.RelesedDate).HasColumnName("RelesedDate").HasColumnType("date");
             builder.Property(s => s.Title).HasColumnName("Title").HasMaxLength(50).IsRequired();
 

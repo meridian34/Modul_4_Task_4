@@ -1,15 +1,15 @@
 ﻿using Modul_4_Task_4.Helpers;
 using System;
+using System.Threading.Tasks;
 
 namespace Modul_4_Task_4
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var s = new Starter();
-            s.Start().GetAwaiter().GetResult();
-
+            await s.Start();
         }
     }
 }

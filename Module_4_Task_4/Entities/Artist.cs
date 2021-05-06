@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Modul_4_Task_4.Entities
 {
@@ -14,6 +11,6 @@ namespace Modul_4_Task_4.Entities
         public string Phone { get; set; }
         public string Email { get; set; }
         public string InstagramUrl { get; set; }
-        public List<Song> Songs { get; set; }
+        public virtual List<Song> Songs { get; set; }
     }
 }

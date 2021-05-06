@@ -38,12 +38,10 @@ namespace Modul_4_Task_4.Helpers
 
         public async Task ThirdTask()
         {
-            var t = await (from s in _context.Songs
-                     where s.RelesedDate > s.Artists.Min(q=>q.DateOfBirth)
-                     select new { Title = s.Title, Date = s.RelesedDate }).ToListAsync();
+            var t = await _context.Songs.Where(s => s.RelesedDate < s.Artists.Max(q=>q.DateOfBirth)).ToListAsync();
             foreach (var i in t)
             {
-                Console.WriteLine($@"{i.Title} : {i.Date}");
+                Console.WriteLine($@"{i}");
             }
         }
     }
