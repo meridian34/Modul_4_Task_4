@@ -1,12 +1,14 @@
-﻿using System;
+﻿using System.Threading.Tasks;
+using Modul_4_Task_4.Helpers;
 
-namespace Module_4_Task_4
+namespace Modul_4_Task_4
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var s = new Starter();
+            await s.Start();
         }
     }
 }
